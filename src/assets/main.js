@@ -1,5 +1,5 @@
 const API = 'https://v3.football.api-sports.io/fixtures?team=541&next=4';
-const content = null || document.querySelector('#content');
+const contentRM = null || document.querySelector('#contentRM');
 
 const options = {
 	method: 'GET',
@@ -40,7 +40,7 @@ async function fetchData(urlApi) {
          </div>
          `).join('')}
         `;
-        content.innerHTML = view;
+        contentRM.innerHTML = view;
     } catch (error) {
         console.log(error);
     }
